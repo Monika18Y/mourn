@@ -365,37 +365,6 @@ onMounted(() => {
   z-index: -1;
 }
 
-/* 雨滴动画 */
-.qingming-container::after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
-  animation: rain 15s linear infinite;
-  z-index: -1;
-}
-
-@keyframes rain {
-  0% {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-}
-
 .header {
   margin-bottom: 4rem;
   animation: fadeIn 2s ease;
